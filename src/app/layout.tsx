@@ -16,7 +16,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header></Header>
-        <h1>Welcome To My Blog!</h1>
+        <div className="container py-8">
+          <h1 className="text-base sm:text-4xl">Welcome To My Blog!</h1>
+        </div>
         {children}
       </body>
     </html>
