@@ -7,7 +7,7 @@ export default async function Posts() {
 
   return (
     <div className="container">
-      <h1 className='text-base py-8 sm:text-4xl'>Posts</h1>
+      <h1 className='text-3xl py-4 sm:text-4xl sm:py-8'>Posts</h1>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-3 pb-8">
         {posts.map((post: any) => (
           <Post key={post.id} post={post}></Post>
