@@ -1,4 +1,5 @@
 import Comment from "@/components/Comment"
+import { Metadata } from "next"
 import React from "react"
 
 type Comment = {
@@ -7,6 +8,10 @@ type Comment = {
     name: string
     email: string
     body: string
+}
+
+export const metadata: Metadata = {
+  title: 'Post',
 }
 
 export default async function Page({ params }: { params: { id: string } }) {
