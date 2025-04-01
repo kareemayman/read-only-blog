@@ -1,4 +1,5 @@
 import Post from "@/components/Post"
+import { PostType } from "@/types"
 import { Metadata } from "next"
 import React from "react"
 
@@ -35,7 +36,7 @@ export default async function UserPage({ params }: { params: { id: string } }) {
       <div className="posts my-4 sm:my-8">
         <p className="font-black text-xl">Posts</p>
         <div className="posts-wrapper grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-3 py-4">
-            {userPosts.map((post: any) => {
+            {userPosts.map((post: PostType) => {
                 return <Post key={post.id} post={post}></Post>
             })}
         </div>

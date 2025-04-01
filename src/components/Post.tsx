@@ -1,7 +1,8 @@
+import { PostType } from "@/types"
 import Link from "next/link"
 import React from "react"
 
-export default function Post({ post, loading }: { post?: any, loading?: boolean }) {
+export default function Post({ post, loading }: { post: PostType, loading?: boolean }) {
   if (loading) {
     return (
       <div className="bg-white rounded-md shadow-md flex flex-col justify-between min-w-[350px]">

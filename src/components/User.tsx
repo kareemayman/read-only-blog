@@ -1,7 +1,8 @@
+import { UserType } from '@/types'
 import Link from 'next/link'
 import React from 'react'
 
-export default function User({ user }: { user: any }) {
+export default function User({ user }: { user: UserType }) {
   return (
     <div className="bg-white p-4 rounded-md shadow-md flex flex-col justify-between">
       <h2 className="text-2xl truncate border-b border-b-gray-300 pb-2 capitalize tracking-tighter">
