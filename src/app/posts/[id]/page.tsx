@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Post',
 }
 
-export default async function Page({ params }: { params: { id: string } }) {
+export default async function Page({ params }: { params: any }) {
   const post: PostType = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${params.id}`
   ).then((res) => res.json())

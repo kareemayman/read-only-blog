@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "User Page",
 }
 
-export default async function UserPage({ params }: { params: { id: string } }) {
+export default async function UserPage({ params }: { params: any }) {
   const user = await fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`).then((res) =>
     res.json()
   )
