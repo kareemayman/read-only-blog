@@ -6,4 +6,4 @@ This is my first **Next.js** project where I create a **Read-only** blog that fe
 
 I tried to utilize Next.js different features like SSR, loading pages, and App-directory routing.
 
-**Demo:** 
+**Demo:** https://read-only-blog.vercel.app/
