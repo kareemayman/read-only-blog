@@ -37,4 +37,13 @@ export type PostType = {
     id: number
     title: string
     body: string
-  }
+}
+
+export type TodoType = {
+    userId: number
+    id: number
+    title: string
+    completed: boolean
+}
+
+export type TodosArrayType = TodoType[]
